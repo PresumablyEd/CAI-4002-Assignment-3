@@ -11,34 +11,36 @@
 
 #### System Overview
 
-[2-3 sentences describing what your application does]
-
+This application provides an interactive supermarket environment where users can browse available products, create a virtual shopping basket, and explore transactions from a dataset. The system also includes a section for running association rule mining (Apriori, Eclat, FP-Growth), which will be implemented in the backend. The frontend is built using Streamlit to provide an easy-to-use interface for loading data, simulating shopping activity, and eventually viewing mined rules.
 
 
 #### Technical Stack
 
-- **Language**: [Python 3.x / JavaScript / Java]
-- **Key Libraries**: [List main dependencies]
-- **UI Framework**: [If applicable]
+- **Language**: Python 3
+- **Key Libraries**: Streamlit (frontend UI), Pandas (CSV loading & dataframe handling)
+- **UI Framework**: Streamlit
 
 
 
 #### Installation
 
 ##### Prerequisites
-- [e.g., Python 3.8+, Node.js 14+, Java 11+]
-- [Other requirements]
-
+- Python 3.8+
+- pip package manager
 ##### Setup
 ```bash
 # Clone or extract project
+
+# Navigate to project
 cd [project-directory]
 
 # Install dependencies
-[command to install dependencies]
+pip install streamlit pandas
 
 # Run application
-[command to start application]
+streamlit run streamlit_app.py
+
+
 ```
 
 
@@ -46,40 +48,40 @@ cd [project-directory]
 #### Usage
 
 ##### 1. Load Data
-- **Manual Entry**: Click items to create transactions
-- **Import CSV**: Use "Import" button to load `sample_transactions.csv`
+-  The Data Explorer page automatically loads sample_transactions.csv and products.csv from the project folder.
+- Users may also upload their own CSV files.
 
 ##### 2. Preprocess Data
-- Click "Run Preprocessing"
-- Review cleaning report (empty transactions, duplicates, etc.)
+- FILL OUT
 
 ##### 3. Run Mining
-- Set minimum support and confidence thresholds
-- Click "Analyze" to execute all three algorithms
-- Wait for completion (~1-3 seconds)
+- On the Association Rules page, users set minimum support, confidence, and lift values.
+- Running the analysis calls a backend function that is (FILL OUT)
 
 ##### 4. Query Results
-- Select product from dropdown
-- View associated items and recommendation strength
-- Optional: View technical details (raw rules, performance metrics)
+- Once backend algorithms are implemented, mined rules will appear in the interface.
+- The Shopping Simulator page will also support recommendations tied to mined rules.
 
 
 
 #### Algorithm Implementation
 
 ##### Apriori
+FILL OUT
 [2-3 sentences on your implementation approach]
 - Data structure: [e.g., dictionary of itemsets]
 - Candidate generation: [breadth-first, level-wise]
 - Pruning strategy: [minimum support]
 
 ##### Eclat
+FILL OUT
 [2-3 sentences on your implementation approach]
 - Data structure: [e.g., TID-set representation]
 - Search strategy: [depth-first]
 - Intersection method: [set operations]
 
 ##### CLOSET
+FILL OUT
 [2-3 sentences on your implementation approach]
 - Data structure: [e.g., FP-tree / prefix tree]
 - Mining approach: [closed itemsets only]
@@ -88,7 +90,7 @@ cd [project-directory]
 
 
 #### Performance Results
-
+FILL OUT
 Tested on provided dataset (80-100 transactions after cleaning):
 
 | Algorithm | Runtime (ms) | Rules Generated | Memory Usage |
@@ -99,7 +101,8 @@ Tested on provided dataset (80-100 transactions after cleaning):
 
 **Parameters**: min_support = 0.2, min_confidence = 0.5
 
-**Analysis**: [1-2 sentences explaining performance differences]
+**Analysis**: FILL OUT
+[1-2 sentences explaining performance differences]
 
 
 
@@ -107,28 +110,18 @@ Tested on provided dataset (80-100 transactions after cleaning):
 
 ```
 project-root/
-├── src/
-│   ├── algorithms/
-│   │   ├── apriori.[py/js/java]
-│   │   ├── eclat.[py/js/java]
-│   │   └── closet.[py/js/java]
-│   ├── preprocessing/
-│   │   └── cleaner.[py/js/java]
-│   ├── ui/
-│   │   └── [interface files]
-│   └── main.[py/js/java]
-├── data/
-│   ├── sample_transactions.csv
-│   └── products.csv
-├── README.md
-├── REPORT.pdf
-└── [requirements.txt / package.json / pom.xml]
+├── streamlit_app.py         # Streamlit frontend (Nicole)
+├── backend.py               # Mining algorithms (Edwin)
+├── sample_transactions.csv
+├── products.csv
+└── README.md
+
 ```
 
 
 
 #### Data Preprocessing
-
+FILL OUT
 Issues handled:
 - Empty transactions: [count] removed
 - Single-item transactions: [count] removed
@@ -140,7 +133,7 @@ Issues handled:
 
 
 #### Testing
-
+FILL OUT
 Verified functionality:
 - [✓] CSV import and parsing
 - [✓] All preprocessing operations
@@ -164,12 +157,12 @@ Test cases:
 [Required: 1 paragraph describing which AI tools you used and for what purpose]
 
 Example:
-"Used ChatGPT for explaining Eclat algorithm vertical representation and debugging file parsing errors. Used GitHub Copilot for generating UI boilerplate code. All generated code was reviewed, tested, and adapted for this specific implementation."
+"ChatGPT was used to assist with UI development in Streamlit, debugging session state behavior, adding item deletion features, and generating template code for backend.py. All generated code was reviewed, edited, and integrated manually to fit the project requirements"
 
 
 
 #### References
 
 - Course lecture materials
-- [Algorithm papers or resources consulted]
-- [Library documentation links]
+- Streamlit documentation
+- Pandas documentation
