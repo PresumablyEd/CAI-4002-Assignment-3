@@ -2,10 +2,10 @@
 
 #### Author Information
 
-- **Name**: [Your Full Name]
-- **Student ID**: [Your ID]
+- **Name**: Nicole Sanchez and Edwin Altamirano
+- **Student ID**: 6398998 and _____
 - **Course**: CAI 4002 - Artificial Intelligence
-- **Semester**: [Fall/Spring Year]
+- **Semester**: [Fall Year]
 
 
 
