@@ -149,6 +149,8 @@ Test cases:
 
 #### AI Tool Usage
 
+ChatGPT was used to assist with UI development in Streamlit, debugging session state behavior, adding item deletion features, and generating template code for backend.py. All generated code was reviewed, edited, and integrated manually to fit the project requirements
+
 Claude AI was used to assist with the backend algorithm implementation, specifically for understanding the Eclat algorithm's vertical data representation and debugging set intersection operations. The AI helped generate boilerplate code for the Apriori candidate generation and rule extraction logic, which was then thoroughly reviewed, tested, and adapted for this specific implementation. All generated code was validated against the assignment requirements and tested with the provided dataset.
 
 #### References
@@ -158,3 +160,4 @@ Claude AI was used to assist with the backend algorithm implementation, specific
 - Pandas documentation for data manipulation
 - Academic papers on Apriori and Eclat algorithms
 - Python standard library documentation for collections and itertools
+
