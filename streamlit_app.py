@@ -141,12 +141,12 @@ def shopping_simulator_page():
             with col2:
                 if st.button("🗑️", key=f"del_{idx}"):
                     st.session_state.basket.pop(idx)
-                    st.experimental_rerun()
+                    st.rerun()
 
         # button to clear the whole basket
         if st.button("Clear basket"):
             st.session_state.basket = []
-            st.experimental_rerun()
+            st.rerun()
     else:
         st.info("Basket is empty. Select items and click the button above.")
 
