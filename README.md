@@ -156,8 +156,7 @@ Test cases:
 
 [Required: 1 paragraph describing which AI tools you used and for what purpose]
 
-Example:
-"ChatGPT was used to assist with UI development in Streamlit, debugging session state behavior, adding item deletion features, and generating template code for backend.py. All generated code was reviewed, edited, and integrated manually to fit the project requirements"
+ChatGPT was used to assist with UI development in Streamlit, debugging session state behavior, adding item deletion features, and generating template code for backend.py. All generated code was reviewed, edited, and integrated manually to fit the project requirements
 
 
 
